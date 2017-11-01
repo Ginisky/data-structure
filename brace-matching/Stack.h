@@ -1,0 +1,15 @@
+#pragma once
+#include<iostream>
+template<class T, int MaxSize>
+class Stack
+{
+	T data[MaxSize];
+	int top;
+public:
+	Stack();
+	void Push(T x);
+	T Pop();
+	T Top();
+	bool Empty();
+	bool Full();
+};
